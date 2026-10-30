@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple itinerary, travel tips, packing checklist, and contact form for a Northern Mindanao trip.">
+    <title>Plan Your Trip | Northern Mindanao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Shared site header and navigation -->
+    <div class="top-line">
+        <div class="container top-line-inner">
+            <div>REGION X · PHILIPPINES</div>
+            <div>EXPLORE PLACES, PEOPLE, AND LOCAL EXPERIENCES</div>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Northern Mindanao home">
+                <img class="logo-image" src="Assets/Images/Logo.png" alt="Northern Mindanao logo">
+                <div class="brand-text">
+                    <strong>NORTHERN MINDANAO</strong>
+                    <small>REGION X · PHILIPPINES</small>
+                </div>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="activities.html">Activities</a>
+                <a href="history.html">History &amp; Culture</a>
+                <a href="plan-trip.html" aria-current="page">Plan Your Trip</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="page-intro-band">
+            <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+                <source src="Assets/Videos/BannerIndex.mp4" type="video/mp4">
+            </video>
+            <div class="container page-intro-content">
+                <p class="eyebrow">A few helpful details before you go</p>
+                <h1>Plan Your Trip</h1>
+                <p>This is a sample 3-day plan, not a fixed tour. Northern Mindanao is a large region, so give yourself extra travel time and check ferry schedules, weather, and attraction access before leaving.</p>
+            </div>
+        </section>
+        <section class="itinerary-section section-space">
+            <div class="container">
+                <div class="section-heading-row"><div><p class="eyebrow">One possible route</p><h2 id="itinerary-title">A simple 3-day itinerary</h2></div><p class="section-side-note">Adjust the plan to your time and transport.</p></div>
+                <div class="itinerary-wrap">
+                    <table class="itinerary">
+                        <thead><tr><th scope="col">Day</th><th scope="col">Plan</th><th scope="col">Notes</th></tr></thead>
+                        <tbody>
+                            <tr><td><div class="day-number">01</div><strong>Cagayan de Oro</strong></td><td>Arrive, explore the city, try local food, and book a guided rafting trip if time allows.</td><td>Keep the first day flexible in case of travel delays. Use a reputable rafting operator.</td></tr>
+                            <tr><td><div class="day-number">02</div><strong>Bukidnon</strong></td><td>Take a day trip to the highlands for views, cooler weather, and an outdoor attraction near Manolo Fortich.</td><td>Leave early and confirm transport. Bring a light jacket for cooler areas.</td></tr>
+                            <tr><td><div class="day-number">03</div><strong>Camiguin</strong></td><td>Start early for the transfer to Balingoan and the ferry to Camiguin. Choose one or two stops such as White Island or the Sunken Cemetery.</td><td>This can be a packed day. Check current ferry schedules and consider staying overnight if the timing is tight.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small-note">Note: The itinerary covers several areas and can involve long transfers. A slower trip focused on one province may be more comfortable.</p>
+            </div>
+        </section>
+        <section class="trip-help-section section-space">
+            <div class="container trip-columns">
+                <article class="info-panel"><p class="eyebrow">Before you leave</p><h2>Travel tips</h2><ul class="tips-list"><li>Check weather conditions and transport schedules before leaving.</li><li>Bring cash for small shops, tricycles, and local transport.</li><li>Use reef-safe habits, avoid littering, and follow rules in protected areas.</li><li>For outdoor activities, listen to guides and use the required safety gear.</li><li>Allow extra time between provinces rather than planning every hour tightly.</li></ul></article>
+                <article class="info-panel"><p class="eyebrow">Pack the basics</p><h2>Basic packing checklist</h2><ul class="checklist"><li><label><input type="checkbox"> Valid ID and booking details</label></li><li><label><input type="checkbox"> Comfortable clothes and walking shoes</label></li><li><label><input type="checkbox"> Light jacket or raincoat</label></li><li><label><input type="checkbox"> Sunscreen, hat, and reusable water bottle</label></li><li><label><input type="checkbox"> Personal medicine and small first-aid items</label></li><li><label><input type="checkbox"> Phone, charger, and power bank</label></li></ul></article>
+            </div>
+        </section>
+        <!-- Required contact form from the project instructions -->
+        <section class="contact-section section-space">
+            <div class="container contact-layout">
+                <div class="contact-intro"><p class="eyebrow">Questions before your visit?</p><h2>Trip Questions</h2><p>Use this form layout to write down your travel questions or planned visit details.</p><p class="form-note">School project note: this HTML form is a static example and does not send messages to a server.</p></div>
+                <div class="contact-form-panel">
+                    <form class="contact-form" action="#" method="get">
+                        <div class="form-field"><label for="full-name">Full Name</label><input type="text" id="full-name" name="full-name" autocomplete="name" required></div>
+                        <div class="form-field"><label for="email">Email Address</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+                        <div class="form-field"><label for="visit-date">Planned Visit Date</label><input type="date" id="visit-date" name="visit-date" required></div>
+                        <div class="form-field"><label for="travelers">Number of Travelers</label><input type="number" id="travelers" name="travelers" min="1" max="50" required></div>
+                        <div class="form-field full-width"><label for="notes">Questions / Notes</label><textarea id="notes" name="notes" placeholder="Write any questions or details here..."></textarea></div>
+                        <div class="form-field full-width"><button type="submit">Send message</button></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Shared footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>NORTHERN MINDANAO</strong>
+                <p>IntroComp Final Project · Tactacon, Lance Ian L.</p>
+            </div>
+            <p>Need help planning? <a href="plan-trip.html">Visit the travel guide</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>
